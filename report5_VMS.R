@@ -25,7 +25,7 @@ sar <- dplyr::select(sar, -WKT)
 
 #set range of years in plots
 
-year_range = "2016-2019"
+year_range = "2017-2020"
 
 
 ###########
