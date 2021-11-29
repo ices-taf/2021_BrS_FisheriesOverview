@@ -1,7 +1,7 @@
 
 library("icesVMS")
 
-vms_sar <- icesVMS::get_sar_map("Baltic Sea")
+vms_sar <- icesVMS::get_sar_map("Barents Sea")
 
 # convert to sf
 vms_sar$wkt <- sf::st_as_sfc(vms_sar$wkt)
