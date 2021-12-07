@@ -36,7 +36,7 @@ year_range = "2017-2020"
 # A. Effort map
 #~~~~~~~~~~~~~~~#
 
-gears <- c("Static", "Midwater", "Otter", "Demersal seine")
+gears <- c("Static", "Midwater", "Otter", "Demersal seine", "Other")
 
 effort <-
     effort %>%
@@ -47,7 +47,8 @@ effort <-
             Static = "Static gears",
             Midwater = "Pelagic trawls and seines",
             Otter = "Bottom otter trawls",
-            `Demersal seine` = "Bottom seines"),
+            `Demersal seine` = "Bottom seines",
+            Other = "Other"),
           mw_fishinghours = as.numeric(mw_fishinghours)
         ) %>%
       filter(!is.na(mw_fishinghours))

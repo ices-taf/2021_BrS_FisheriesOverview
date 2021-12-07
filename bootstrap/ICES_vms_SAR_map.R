@@ -1,6 +1,7 @@
 
 library("icesVMS")
 
+# icesVMS::update_token("colin")
 vms_sar <- icesVMS::get_sar_map("Barents Sea")
 
 # convert to sf

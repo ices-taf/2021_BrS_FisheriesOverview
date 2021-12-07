@@ -256,6 +256,9 @@ write.taf(dat, file = paste0(year_cap,"_",ecoreg, "_FO_SAG_GESpies.csv"),dir ="r
 
 dat <- format_annex_table(clean_status, year)
 
+
+dat <- read.csv("report/2021_BrS_FO_SAG_annex_table.csv", header = TRUE)
+html_annex_table(dat,"BrS",2021)
 write.taf(dat, file = paste0(year_cap,"_", ecoreg, "_FO_SAG_annex_table.csv"), dir = "report", quote = TRUE)
 
 # This annex table has to be edited by hand,
