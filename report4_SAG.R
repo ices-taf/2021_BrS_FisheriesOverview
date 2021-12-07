@@ -122,6 +122,8 @@ dev.off()
 
 # 2. Pelagic
 #~~~~~~~~~~~
+catch_current$Status[which(catch_current$StockKeyLabel == "cap.27.1-2")] <- "RED"
+
 bar <- plot_CLD_bar(catch_current, guild = "pelagic", caption = TRUE, cap_year, cap_month , return_data = FALSE)
 
 bar_dat <- plot_CLD_bar(catch_current, guild = "pelagic", caption = TRUE, cap_year , cap_month , return_data = TRUE)
